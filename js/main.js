@@ -175,7 +175,7 @@ const GM = [
 
 const BK = [
   ["Julio Verne", "julio"],
-  ["Christopher Paolini — Eragon", "chistoper"],
+  ["Christopher Paolini — Eragon", "cristoper"],
   ["Choque de imperios: el gran asedio de Malta", "choque"]
 ];
 
@@ -241,7 +241,7 @@ const card = (n, s, x) => `
   <div class="card">
     <div class="th">
       <span>${n[0]}</span>
-      <img src="assets/img/hobbies/${s}.jfif" alt="${n}" onerror="this.remove()">
+      <img src="assets/img/hobbies/${s}.jpg" alt="${n}" onerror="this.remove()">
     </div>
     <h3>${n}</h3>
     ${x || ""}
