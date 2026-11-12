@@ -167,16 +167,16 @@ const P = [
 ];
 
 const GM = [
-  ["Call of Duty: Black Ops", "cod-black-ops"],
-  ["Gears of War", "gears-of-war"],
+  ["Call of Duty: Black Ops", "callofduty"],
+  ["Gears of War", "gearsofware"],
   ["Blood Strike", "bloodstrike"],
-  ["Minecraft", "minecraft"]
+  ["Minecraft", "minecratf"]
 ];
 
 const BK = [
-  ["Julio Verne", "julio-verne"],
-  ["Christopher Paolini — Eragon", "eragon"],
-  ["Choque de imperios: el gran asedio de Malta", "malta"]
+  ["Julio Verne", "julio"],
+  ["Christopher Paolini — Eragon", "chistoper"],
+  ["Choque de imperios: el gran asedio de Malta", "choque"]
 ];
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -241,7 +241,7 @@ const card = (n, s, x) => `
   <div class="card">
     <div class="th">
       <span>${n[0]}</span>
-      <img src="assets/img/hobbies/${s}.jpg" alt="${n}" onerror="this.remove()">
+      <img src="assets/img/hobbies/${s}.jfif" alt="${n}" onerror="this.remove()">
     </div>
     <h3>${n}</h3>
     ${x || ""}
@@ -353,4 +353,3 @@ function mx() {
 
 addEventListener("resize", mx);
 render();
-
