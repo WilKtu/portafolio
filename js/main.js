@@ -169,7 +169,7 @@ const P = [
 const GM = [
   ["Call of Duty: Black Ops", "callofduty"],
   ["Gears of War", "gearsofware"],
-  ["Blood Strike", "bloodstrike"],
+  ["Blood Strike", "blood"],
   ["Minecraft", "minecratf"]
 ];
 
@@ -237,14 +237,18 @@ $("#f").innerHTML = `
   <p>© ${new Date().getFullYear()} Wilder Catú · <span data-i="foot"></span></p>
 `;
 
-const card = (n, s, x) => `
-  <div class="card">
-    <div class="th">
-      <span>${n[0]}</span>
-      <img src="assets/img/hobbies/${s}.jpg" alt="${n}" onerror="this.remove()">
+const card = (n, s, kind) => `
+  <div class="card hobby-card">
+    <div class="hobby-image ${kind}-image">
+      <img
+        src="assets/img/hobbies/${s}.jpg"
+        alt="${n}"
+        loading="lazy"
+        decoding="async"
+        onerror="this.remove()"
+      >
     </div>
     <h3>${n}</h3>
-    ${x || ""}
   </div>
 `;
 
@@ -282,12 +286,12 @@ function render() {
 
   const g = $("#games");
   if (g) {
-    g.innerHTML = GM.map(([n, s]) => card(n, s)).join("");
+    g.innerHTML = GM.map(([n, s]) => card(n, s, "game")).join("");
   }
 
   const b = $("#books");
   if (b) {
-    b.innerHTML = BK.map(([n, s]) => card(n, s)).join("");
+    b.innerHTML = BK.map(([n, s]) => card(n, s, "book")).join("");
   }
 
   const v = $("#cvf");

@@ -24,5 +24,5 @@ Abre `index.html` en el navegador, o publícalo gratis con GitHub Pages
 - **Proyectos:** edita el arreglo `P` en `js/main.js`.
 - **Textos:** edita el objeto `L` (`es` y `en`) en `js/main.js`.
 - **Imágenes de pasatiempos:** guarda archivos `.jpg` en `assets/img/hobbies/` con estos nombres:
-  `cod-black-ops`, `gears-of-war`, `bloodstrike`, `minecraft`, `julio-verne`, `eragon`, `malta`.
-  Si no existen, se muestra una tarjeta con la inicial.
+  `callofduty`, `gearsofware`, `blood`, `minecratf`, `julio`, `cristoper`, `choque`.
+  Las imágenes se cargan de forma diferida y se ajustan sin recortar la portada.
